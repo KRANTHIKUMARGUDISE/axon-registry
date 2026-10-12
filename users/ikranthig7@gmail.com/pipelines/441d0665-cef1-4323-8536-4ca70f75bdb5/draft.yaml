@@ -1,0 +1,68 @@
+id: 441d0665-cef1-4323-8536-4ca70f75bdb5
+schemaVersion: 2
+createdAt: 2026-10-12T20:29:30.296Z
+updatedAt: 2026-10-12T20:29:30.296Z
+scope: Personal
+owner: ikranthig7@gmail.com
+status: Draft
+name: Untitled Pipeline
+description: ""
+version: 1
+nodes:
+  - id: "1791836942520"
+    type: IO
+    name: Ticket Fetcher
+    label: Ticket Fetcher
+    blockId: axon-ticket-fetcher
+    position:
+      x: 84.70588235294116
+      y: -253.8235294117647
+    config: {}
+    timeoutSeconds: 120
+  - id: "1791836949542"
+    type: Execution
+    name: Test Runner
+    label: Test Runner
+    blockId: axon-test-runner
+    position:
+      x: 105.29411764705881
+      y: -29.499999999999982
+    config: {}
+    timeoutSeconds: 120
+  - id: "1791836951000"
+    type: Control
+    name: Human Gate
+    label: Human Gate
+    blockId: axon-human-gate
+    position:
+      x: 113.52941176470588
+      y: 96.38235294117649
+    config: {}
+    timeoutSeconds: 120
+  - id: "1791836954208"
+    type: Utility
+    name: Workspace Provisioner
+    label: Workspace Provisioner
+    blockId: axon-workspace-provisioner
+    position:
+      x: 64.11764705882354
+      y: -135.38235294117646
+    config: {}
+    timeoutSeconds: 120
+edges:
+  - id: 1791836942520-bottom-1791836954208-top
+    sourceNodeId: "1791836942520"
+    targetNodeId: "1791836954208"
+    isDefault: false
+    condition: null
+  - id: 1791836954208-bottom-1791836949542-top
+    sourceNodeId: "1791836954208"
+    targetNodeId: "1791836949542"
+    isDefault: false
+    condition: null
+  - id: 1791836949542-bottom-1791836951000-top
+    sourceNodeId: "1791836949542"
+    targetNodeId: "1791836951000"
+    isDefault: false
+    condition: null
+createdByName: Kranthi G
