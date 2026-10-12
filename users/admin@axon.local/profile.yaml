@@ -1,0 +1,11 @@
+id: admin@axon.local
+schemaVersion: 2
+scope: Personal
+owner: admin@axon.local
+email: admin@axon.local
+displayName: ""
+team: Platform
+machines:
+  - id: 89202d98-fd33-4338-8277-d0d05c3a898a
+    name: KGUDISE
+    lastSeen: 2026-10-12T19:56:17.543Z
