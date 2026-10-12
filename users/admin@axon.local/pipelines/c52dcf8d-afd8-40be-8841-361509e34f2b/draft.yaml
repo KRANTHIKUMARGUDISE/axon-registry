@@ -1,0 +1,68 @@
+id: c52dcf8d-afd8-40be-8841-361509e34f2b
+schemaVersion: 2
+createdAt: 2026-10-12T20:05:12.520Z
+updatedAt: 2026-10-12T20:05:12.520Z
+scope: Personal
+owner: admin@axon.local
+status: Draft
+name: Untitled Pipeline
+description: ""
+version: 1
+nodes:
+  - id: "1791835476904"
+    type: IO
+    name: PR Creator
+    label: PR Creator
+    blockId: axon-pr-creator
+    position:
+      x: 178.23529411764704
+      y: 64.11764705882354
+    config: {}
+    timeoutSeconds: 120
+  - id: "1791835480111"
+    type: IO
+    name: Ticket Fetcher
+    label: Ticket Fetcher
+    blockId: axon-ticket-fetcher
+    position:
+      x: 120.00000000000003
+      y: -268.9117647058824
+    config: {}
+    timeoutSeconds: 120
+  - id: "1791835486223"
+    type: Control
+    name: Human Gate
+    label: Human Gate
+    blockId: axon-human-gate
+    position:
+      x: 150.58823529411765
+      y: -33.91176470588233
+    config: {}
+    timeoutSeconds: 120
+  - id: "1791835496511"
+    type: Utility
+    name: Workspace Provisioner
+    label: Workspace Provisioner
+    blockId: axon-workspace-provisioner
+    position:
+      x: 145.88235294117646
+      y: -148.02941176470586
+    config: {}
+    timeoutSeconds: 120
+edges:
+  - id: xy-edge__1791835480111bottom-1791835496511top
+    sourceNodeId: "1791835480111"
+    targetNodeId: "1791835496511"
+    isDefault: false
+    condition: null
+  - id: 1791835496511-bottom-1791835486223-top
+    sourceNodeId: "1791835496511"
+    targetNodeId: "1791835486223"
+    isDefault: false
+    condition: null
+  - id: 1791835486223-bottom-1791835476904-top
+    sourceNodeId: "1791835486223"
+    targetNodeId: "1791835476904"
+    isDefault: false
+    condition: null
+createdByName: admin@axon.local
