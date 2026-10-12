@@ -1,7 +1,7 @@
 id: 441d0665-cef1-4323-8536-4ca70f75bdb5
 schemaVersion: 2
 createdAt: 2026-10-12T20:29:30.296Z
-updatedAt: 2026-10-12T20:36:20.562Z
+updatedAt: 2026-10-12T22:03:59.810Z
 scope: Personal
 owner: ikranthig7@gmail.com
 status: Draft
@@ -15,18 +15,8 @@ nodes:
     label: Ticket Fetcher
     blockId: axon-ticket-fetcher
     position:
-      x: 84.70588235294116
-      y: -253.8235294117647
-    config: {}
-    timeoutSeconds: 120
-  - id: "1791836949542"
-    type: Execution
-    name: Test Runner
-    label: Test Runner
-    blockId: axon-test-runner
-    position:
-      x: 105.29411764705881
-      y: -29.499999999999982
+      x: -136.47058823529414
+      y: -372.6470588235294
     config: {}
     timeoutSeconds: 120
   - id: "1791836951000"
@@ -35,8 +25,8 @@ nodes:
     label: Human Gate
     blockId: axon-human-gate
     position:
-      x: 113.52941176470588
-      y: 96.38235294117649
+      x: -126.47058823529414
+      y: 65.79411764705885
     config: {}
     timeoutSeconds: 120
   - id: "1791836954208"
@@ -45,24 +35,64 @@ nodes:
     label: Workspace Provisioner
     blockId: axon-workspace-provisioner
     position:
-      x: 64.11764705882354
-      y: -135.38235294117646
+      x: -150
+      y: -150.6764705882353
+    config: {}
+    timeoutSeconds: 120
+  - id: "1791842573217"
+    type: Execution
+    name: Demo Coder
+    label: Demo Coder
+    blockId: 48d69ae0-08b9-42c6-88bb-f493c786d7ce
+    position:
+      x: -141.1764705882353
+      y: -43.132352941176485
+    config: {}
+    timeoutSeconds: 120
+  - id: "1791842574817"
+    type: Execution
+    name: Demo Planner
+    label: Demo Planner
+    blockId: e2e32819-2be0-4111-ba24-6763e8542abd
+    position:
+      x: -140
+      y: -257.25
+    config: {}
+    timeoutSeconds: 120
+  - id: "1791842634617"
+    type: Execution
+    name: PR Creator
+    label: PR Creator
+    blockId: axon-pr-creator
+    position:
+      x: -108.23529411764707
+      y: 205.10294117647055
     config: {}
     timeoutSeconds: 120
 edges:
-  - id: 1791836942520-bottom-1791836954208-top
+  - id: 1791836942520-bottom-1791842574817-top
     sourceNodeId: "1791836942520"
+    targetNodeId: "1791842574817"
+    isDefault: false
+    condition: null
+  - id: 1791842574817-bottom-1791836954208-top
+    sourceNodeId: "1791842574817"
     targetNodeId: "1791836954208"
     isDefault: false
     condition: null
-  - id: 1791836954208-bottom-1791836949542-top
+  - id: 1791836954208-bottom-1791842573217-top
     sourceNodeId: "1791836954208"
-    targetNodeId: "1791836949542"
+    targetNodeId: "1791842573217"
     isDefault: false
     condition: null
-  - id: 1791836949542-bottom-1791836951000-top
-    sourceNodeId: "1791836949542"
+  - id: 1791842573217-bottom-1791836951000-top
+    sourceNodeId: "1791842573217"
     targetNodeId: "1791836951000"
+    isDefault: false
+    condition: null
+  - id: 1791836951000-bottom-1791842634617-top
+    sourceNodeId: "1791836951000"
+    targetNodeId: "1791842634617"
     isDefault: false
     condition: null
 createdByName: Kranthi G
