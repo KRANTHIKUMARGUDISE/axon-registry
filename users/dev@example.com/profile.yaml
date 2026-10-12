@@ -1,0 +1,11 @@
+id: dev@example.com
+schemaVersion: 2
+scope: Personal
+owner: dev@example.com
+email: dev@example.com
+displayName: Dev Eloper
+team: ""
+machines:
+  - id: c9a7c817-1976-4479-b0c8-9b6c042e4a4b
+    name: KGUDISE
+    lastSeen: 2026-10-12T20:40:03.603Z
