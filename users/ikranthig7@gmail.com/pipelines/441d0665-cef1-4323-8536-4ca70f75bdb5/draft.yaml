@@ -1,11 +1,11 @@
 id: 441d0665-cef1-4323-8536-4ca70f75bdb5
 schemaVersion: 2
 createdAt: 2026-10-12T20:29:30.296Z
-updatedAt: 2026-10-12T20:29:30.296Z
+updatedAt: 2026-10-12T20:36:20.562Z
 scope: Personal
 owner: ikranthig7@gmail.com
 status: Draft
-name: Untitled Pipeline
+name: Test Pipeline
 description: ""
 version: 1
 nodes:
