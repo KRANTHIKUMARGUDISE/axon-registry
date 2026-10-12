@@ -1,0 +1,23 @@
+id: e2e32819-2be0-4111-ba24-6763e8542abd
+schemaVersion: 2
+createdAt: 2026-10-12T22:02:15.215Z
+updatedAt: 2026-10-12T22:02:15.215Z
+scope: Personal
+owner: ikranthig7@gmail.com
+status: Draft
+name: Demo Planner
+role: Execution
+description: Demo planner for AXON multi-repo testing. Returns a fixed work-item list with one item per demo repo, so a ForEach can fan out to axon-demo-api and axon-demo-web.
+version: 1
+tags: []
+sourceType: Local
+agentRuntime: Claude
+artifactFormat: Skill
+artifactName: Demo Planner
+entryPointPath: SKILL.md
+contextRequirements: []
+outputSchema: []
+contextMode: Selective
+executionType: Prompt
+defaultTimeoutSeconds: 120
+visibility: Personal
