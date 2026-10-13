@@ -1,10 +1,10 @@
 id: e2e32819-2be0-4111-ba24-6763e8542abd
 schemaVersion: 2
 createdAt: 2026-10-12T22:02:15.215Z
-updatedAt: 2026-10-13T11:02:12.675Z
+updatedAt: 2026-10-13T11:16:12.570Z
 scope: Personal
 owner: ikranthig7@gmail.com
-status: Draft
+status: Published
 name: Demo Planner
 role: Execution
 description: Demo planner for AXON multi-repo testing. Returns a work-item list with one item per demo repo (axon-demo-api, axon-demo-web) for a ForEach to run.
@@ -15,8 +15,7 @@ agentRuntime: Claude
 artifactFormat: Skill
 artifactName: Demo Planner
 entryPointPath: SKILL.md
-contextRequirements:
-  - ticket
+contextRequirements: []
 outputSchema:
   - name: workItems
     type: WorkItemList
