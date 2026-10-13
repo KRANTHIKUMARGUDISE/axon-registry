@@ -8,4 +8,5 @@ team: KG
 machines:
   - id: 89202d98-fd33-4338-8277-d0d05c3a898a
     name: KGUDISE
-    lastSeen: 2026-10-13T07:34:34.662Z
+    lastSeen: 2026-10-13T08:25:22.896Z
+pausedAll: false
