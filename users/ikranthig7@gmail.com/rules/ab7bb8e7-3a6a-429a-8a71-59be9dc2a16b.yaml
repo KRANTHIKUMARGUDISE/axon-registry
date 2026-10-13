@@ -4,7 +4,7 @@ scope: Personal
 owner: ikranthig7@gmail.com
 name: Deliver with Jira Status
 source: jira
-enabled: false
+enabled: true
 jiraProjectKey: KG
 readyLabel: axon-ready
 readyStatus: In Progress
@@ -13,4 +13,4 @@ pipelineVersion: 5
 pollIntervalMinutes: 2
 postOutcomeComment: true
 createdAt: 2026-10-13T13:14:04.925Z
-updatedAt: 2026-10-13T13:14:04.925Z
+updatedAt: 2026-10-13T13:32:10.822Z
