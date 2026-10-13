@@ -2,7 +2,7 @@ id: 0b580f7a-3946-4e0f-ab25-ce54f58409e1
 schemaVersion: 2
 scope: Personal
 owner: ikranthig7@gmail.com
-name: Delivery
+name: Deliver with Jira lable
 source: jira
 enabled: true
 jiraProjectKey: KG
@@ -12,4 +12,4 @@ pipelineVersion: 4
 pollIntervalMinutes: 2
 postOutcomeComment: true
 createdAt: 2026-10-13T11:05:01.997Z
-updatedAt: 2026-10-13T11:23:24.841Z
+updatedAt: 2026-10-13T13:13:17.465Z
