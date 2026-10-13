@@ -1,0 +1,43 @@
+{
+  "id": "b202a6c5-3ad8-4e63-9eda-fee1d97a3844",
+  "schemaVersion": 2,
+  "scope": "Personal",
+  "owner": "ikranthig7@gmail.com",
+  "ticketId": "KG-1",
+  "status": "Failed",
+  "startedAt": "2026-10-13T01:17:22.289Z",
+  "completedAt": "2026-10-13T01:17:24.782Z",
+  "durationMs": 2493,
+  "pipelineId": "441d0665-cef1-4323-8536-4ca70f75bdb5",
+  "pipelineVersion": 1,
+  "blockVersions": {
+    "axon-human-gate": 1,
+    "axon-workspace-provisioner": 4,
+    "e2e32819-2be0-4111-ba24-6763e8542abd": 1,
+    "axon-pr-creator": 4,
+    "48d69ae0-08b9-42c6-88bb-f493c786d7ce": 1
+  },
+  "gates": [],
+  "steps": [
+    {
+      "nodeId": "1791842574817",
+      "blockId": "e2e32819-2be0-4111-ba24-6763e8542abd",
+      "blockName": "Demo Planner",
+      "status": "Completed",
+      "startedAt": "2026-10-13T01:17:22.308Z",
+      "completedAt": "2026-10-13T01:17:24.710Z",
+      "durationMs": 2402
+    },
+    {
+      "nodeId": "1791836954208",
+      "blockId": "axon-workspace-provisioner",
+      "blockName": "Workspace Provisioner",
+      "status": "Failed",
+      "startedAt": "2026-10-13T01:17:24.740Z",
+      "completedAt": "2026-10-13T01:17:24.769Z",
+      "durationMs": 29
+    }
+  ],
+  "prUrls": [],
+  "repoUrls": []
+}
