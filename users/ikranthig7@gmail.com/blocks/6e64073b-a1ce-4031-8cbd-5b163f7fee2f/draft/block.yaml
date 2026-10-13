@@ -1,0 +1,31 @@
+id: 6e64073b-a1ce-4031-8cbd-5b163f7fee2f
+schemaVersion: 2
+createdAt: 2026-10-13T17:19:56.194Z
+updatedAt: 2026-10-13T17:19:56.194Z
+scope: Personal
+owner: ikranthig7@gmail.com
+status: Draft
+name: Lane Planner
+role: Execution
+description: Splits a Jira story into work items, one per repository and specialist lane, ordered by dependency, for a multi-lane ForEach. Chooses repos from the AXON catalog and lanes from the ForEach.
+version: 1
+tags: []
+sourceType: Local
+agentRuntime: Claude
+artifactFormat: Skill
+artifactName: Lane Planner
+entryPointPath: SKILL.md
+contextRequirements:
+  - ticket
+  - repoCatalog
+  - lanes
+outputSchema:
+  - name: workItems
+    type: WorkItemList
+    itemFields:
+      - repo
+      - lane
+contextMode: Selective
+executionType: Prompt
+defaultTimeoutSeconds: 120
+visibility: Personal
