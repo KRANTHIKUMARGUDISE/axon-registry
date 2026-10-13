@@ -1,7 +1,7 @@
 id: 22042886-d897-4683-b7fe-1663abfda41f
 schemaVersion: 2
 createdAt: 2026-10-13T09:52:37.513Z
-updatedAt: 2026-10-13T09:52:37.513Z
+updatedAt: 2026-10-13T17:18:10.087Z
 scope: Personal
 owner: ikranthig7@gmail.com
 status: Draft
@@ -9,24 +9,14 @@ name: Untitled Pipeline
 description: ""
 version: 1
 nodes:
-  - id: "1791884989264"
-    type: IO
-    name: Ticket Fetcher
-    label: Ticket Fetcher
-    blockId: axon-ticket-fetcher
-    position:
-      x: -97.70588235294119
-      y: -271.5294117647059
-    config: {}
-    timeoutSeconds: 120
   - id: "1791885002519"
     type: IO
     name: Workspace Provisioner
     label: Workspace Provisioner
     blockId: axon-workspace-provisioner
     position:
-      x: 49.352941176470566
-      y: -29.176470588235276
+      x: -251.60602783275237
+      y: 92.58555504145033
     config: {}
     timeoutSeconds: 120
   - id: "1791885046400"
@@ -35,8 +25,8 @@ nodes:
     label: Demo Planner
     blockId: e2e32819-2be0-4111-ba24-6763e8542abd
     position:
-      x: 11.705882352941188
-      y: -155.05882352941177
+      x: -422.50209583593767
+      y: -44.783781449696505
     config: {}
     timeoutSeconds: 120
   - id: "1791885057952"
@@ -51,16 +41,22 @@ nodes:
     onEmpty: fail
     size:
       width: 420
-      height: 220
+      height: 356
+    lanes:
+      - id: lane-5u9vm2
+        name: lane-1
+      - id: lane-glhwc5
+        name: lane-2
   - id: "1791885075168"
     type: Control
     name: Human Gate
     label: Human Gate
     blockId: axon-human-gate
     position:
-      x: 168.17647058823528
-      y: 350.82352941176475
-    config: {}
+      x: 290.4143024527519
+      y: 489.5930540868091
+    config:
+      reason: test
     timeoutSeconds: 120
   - id: "1791885100096"
     type: Execution
@@ -68,8 +64,8 @@ nodes:
     label: PR Creator
     blockId: axon-pr-creator
     position:
-      x: 211.70588235294122
-      y: 455.5294117647059
+      x: 430.62028460740436
+      y: 564.124205184694
     config: {}
     timeoutSeconds: 120
   - id: "1791885108375"
@@ -78,9 +74,10 @@ nodes:
     label: Jira Update
     blockId: axon-jira-update
     position:
-      x: 225.8235294117647
-      y: 561.4117647058823
-    config: {}
+      x: 581.5929115810113
+      y: 664.3448433208437
+    config:
+      transition: test
     timeoutSeconds: 120
   - id: "1791885062016"
     type: Execution
@@ -89,16 +86,24 @@ nodes:
     blockId: 48d69ae0-08b9-42c6-88bb-f493c786d7ce
     parentId: "1791885057952"
     position:
-      x: 116.47058823529409
-      y: 90.58823529411764
+      x: 86.70106356024962
+      y: 116.29083858412353
     config: {}
     timeoutSeconds: 120
+    laneId: lane-5u9vm2
+  - id: "1791911725955"
+    type: Execution
+    name: Demo Coder
+    label: Demo Coder
+    blockId: 48d69ae0-08b9-42c6-88bb-f493c786d7ce
+    parentId: "1791885057952"
+    position:
+      x: 95.17169293972643
+      y: 270.38214725503445
+    config: {}
+    timeoutSeconds: 120
+    laneId: lane-glhwc5
 edges:
-  - id: xy-edge__1791884989264bottom-1791885046400top
-    sourceNodeId: "1791884989264"
-    targetNodeId: "1791885046400"
-    isDefault: false
-    condition: null
   - id: 1791885046400-bottom-1791885002519-top
     sourceNodeId: "1791885046400"
     targetNodeId: "1791885002519"
