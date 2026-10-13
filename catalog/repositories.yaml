@@ -1,0 +1,11 @@
+repositories:
+  - name: axon-demo-api
+    url: https://github.com/KRANTHIKUMARGUDISE/axon-demo-api.git
+    defaultBranch: main
+    description: Refunds REST API (Node). Owns refund endpoints, validation and events.
+    tags: [backend, refunds, api]
+  - name: axon-demo-web
+    url: https://github.com/KRANTHIKUMARGUDISE/axon-demo-web.git
+    defaultBranch: main
+    description: Merchant web portal (React). Owns refund forms and refund history pages.
+    tags: [frontend, refunds, ui]
