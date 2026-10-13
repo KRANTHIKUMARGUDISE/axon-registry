@@ -39,18 +39,27 @@
       "nodeId": "1791852663852",
       "blockName": "ForEach",
       "status": "Cancelled",
-      "startedAt": "2026-10-13T03:09:05.654Z",
-      "completedAt": "2026-10-13T03:09:08.283Z",
-      "durationMs": 2629
+      "startedAt": "2026-10-13T03:13:31.265Z",
+      "completedAt": "2026-10-13T03:13:42.642Z",
+      "durationMs": 11377
+    },
+    {
+      "nodeId": "1791842573217",
+      "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
+      "blockName": "Demo Coder",
+      "status": "Completed",
+      "startedAt": "2026-10-13T03:13:31.303Z",
+      "completedAt": "2026-10-13T03:13:38.980Z",
+      "durationMs": 7677
     },
     {
       "nodeId": "1791842573217",
       "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
       "blockName": "Demo Coder",
       "status": "Cancelled",
-      "startedAt": "2026-10-13T03:09:05.682Z",
-      "completedAt": "2026-10-13T03:09:08.283Z",
-      "durationMs": 2601
+      "startedAt": "2026-10-13T03:13:39.013Z",
+      "completedAt": "2026-10-13T03:13:42.642Z",
+      "durationMs": 3629
     }
   ],
   "prUrls": [],
