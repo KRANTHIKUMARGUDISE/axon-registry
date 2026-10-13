@@ -4,10 +4,10 @@
   "scope": "Personal",
   "owner": "ikranthig7@gmail.com",
   "ticketId": "KG-1",
-  "status": "Failed",
+  "status": "Completed",
   "startedAt": "2026-10-13T01:19:35.032Z",
-  "completedAt": "2026-10-13T01:46:48.200Z",
-  "durationMs": 1633168,
+  "completedAt": "2026-10-13T03:05:11.600Z",
+  "durationMs": 6336568,
   "pipelineId": "441d0665-cef1-4323-8536-4ca70f75bdb5",
   "pipelineVersion": 1,
   "blockVersions": {
@@ -84,12 +84,14 @@
       "nodeId": "1791842634617",
       "blockId": "axon-pr-creator",
       "blockName": "PR Creator",
-      "status": "Failed",
-      "startedAt": "2026-10-13T01:46:44.589Z",
-      "completedAt": "2026-10-13T01:46:48.183Z",
-      "durationMs": 3594
+      "status": "Completed",
+      "startedAt": "2026-10-13T03:05:01.510Z",
+      "completedAt": "2026-10-13T03:05:11.549Z",
+      "durationMs": 10039
     }
   ],
-  "prUrls": [],
+  "prUrls": [
+    "https://github.com/KRANTHIKUMARGUDISE/axon-demo-api/pull/3"
+  ],
   "repoUrls": []
 }
