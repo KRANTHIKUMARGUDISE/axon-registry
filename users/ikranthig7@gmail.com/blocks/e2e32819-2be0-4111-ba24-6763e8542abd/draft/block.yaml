@@ -1,7 +1,7 @@
 id: e2e32819-2be0-4111-ba24-6763e8542abd
 schemaVersion: 2
 createdAt: 2026-10-12T22:02:15.215Z
-updatedAt: 2026-10-13T09:02:19.108Z
+updatedAt: 2026-10-13T10:19:46.771Z
 scope: Personal
 owner: ikranthig7@gmail.com
 status: Draft
@@ -20,6 +20,7 @@ contextRequirements:
 outputSchema:
   - name: workItems
     type: WorkItemList
+  - repo
 contextMode: Selective
 executionType: Prompt
 defaultTimeoutSeconds: 120
