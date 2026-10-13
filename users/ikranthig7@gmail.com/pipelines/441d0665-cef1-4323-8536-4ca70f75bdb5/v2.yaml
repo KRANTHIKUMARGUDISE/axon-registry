@@ -1,10 +1,10 @@
 id: 441d0665-cef1-4323-8536-4ca70f75bdb5
 schemaVersion: 2
 createdAt: 2026-10-12T20:29:30.296Z
-updatedAt: 2026-10-13T11:03:37.653Z
+updatedAt: 2026-10-13T11:17:00.616Z
 scope: Personal
 owner: ikranthig7@gmail.com
-status: Draft
+status: Published
 name: Delivery Pipeline
 description: ""
 version: 2
@@ -32,17 +32,6 @@ nodes:
     config: {}
     timeoutSeconds: 120
     blockVersion: 7
-  - id: "1791842574817"
-    type: Execution
-    name: Demo Planner
-    label: Demo Planner
-    blockId: e2e32819-2be0-4111-ba24-6763e8542abd
-    position:
-      x: -334.5517418032787
-      y: -304.921618852459
-    config: {}
-    timeoutSeconds: 120
-    blockVersion: 3
   - id: "1791842634617"
     type: Execution
     name: PR Creator
@@ -67,6 +56,17 @@ nodes:
     size:
       width: 240
       height: 140
+  - id: "1791890196866"
+    type: Execution
+    name: Demo Planner
+    label: Demo Planner
+    blockId: e2e32819-2be0-4111-ba24-6763e8542abd
+    position:
+      x: -306.58743671648995
+      y: -330.7602760366442
+    config: {}
+    timeoutSeconds: 120
+    blockVersion: 3
   - id: "1791842573217"
     type: Execution
     name: Demo Coder
@@ -80,11 +80,6 @@ nodes:
     timeoutSeconds: 120
     blockVersion: 1
 edges:
-  - id: 1791842574817-bottom-1791836954208-top
-    sourceNodeId: "1791842574817"
-    targetNodeId: "1791836954208"
-    isDefault: false
-    condition: null
   - id: 1791836951000-bottom-1791842634617-top
     sourceNodeId: "1791836951000"
     targetNodeId: "1791842634617"
@@ -98,6 +93,11 @@ edges:
   - id: 1791836954208-bottom-1791852663852-left
     sourceNodeId: "1791836954208"
     targetNodeId: "1791852663852"
+    isDefault: false
+    condition: null
+  - id: 1791890196866-bottom-1791836954208-top
+    sourceNodeId: "1791890196866"
+    targetNodeId: "1791836954208"
     isDefault: false
     condition: null
 onFailure: []
