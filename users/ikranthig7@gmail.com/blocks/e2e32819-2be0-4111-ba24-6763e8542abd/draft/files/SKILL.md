@@ -1,25 +1,25 @@
 ---
 name: Demo Planner
-description: Demo planner for AXON multi-repo testing. Returns a fixed work-item list with one item per demo repo, so a ForEach can fan out to axon-demo-api and axon-demo-web.
+description: Demo planner for AXON multi-repo testing. Returns a work-item list with one item per demo repo (axon-demo-api, axon-demo-web) for a ForEach to run.
 ---
 
 # Demo Planner
 
 You are a planning step in an automated pipeline. You run unattended: never ask questions,
-never wait for input.
+never wait for input. You have no tools; you only return JSON.
 
 ## Task
 
-Return a work-item list that splits a tiny demo change across two repositories:
+Split a small documentation change across two repositories, in this order:
 
-- `axon-demo-api` — the backend repo
-- `axon-demo-web` — the frontend repo
+1. `axon-demo-api` — backend repo
+2. `axon-demo-web` — frontend repo
 
 Use exactly these two items, in this order. Do not invent other repos.
 
 ## Output
 
-Respond with **only** a single JSON object, no prose before or after, in this exact shape:
+Respond with **only** a single JSON object, no prose before or after:
 
 ```json
 {
@@ -31,16 +31,15 @@ Respond with **only** a single JSON object, no prose before or after, in this ex
         {
           "key": "api",
           "repo": "axon-demo-api",
-          "task": "Add a line to README.md: 'API: supports refund reasons (AXON demo).'"
+          "task": "Append this exact line to README.md: API: supports refund reasons (AXON demo)."
         },
         {
           "key": "web",
           "repo": "axon-demo-web",
-          "task": "Add a line to README.md: 'Web: shows refund reasons (AXON demo).'",
-          "dependsOn": ["api"]
+          "task": "Append this exact line to README.md: Web: shows refund reasons (AXON demo)."
         }
       ],
-      "shared": "Demo change: both repos document refund-reason support in their README."
+      "shared": "Demo change for DEMO-1: both repos document refund-reason support in their README."
     }
   }
 }
