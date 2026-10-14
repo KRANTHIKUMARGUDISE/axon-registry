@@ -1,11 +1,11 @@
 id: 22042886-d897-4683-b7fe-1663abfda41f
 schemaVersion: 2
 createdAt: 2026-10-13T09:52:37.513Z
-updatedAt: 2026-10-13T17:27:33.805Z
+updatedAt: 2026-10-14T06:39:11.937Z
 scope: Personal
 owner: ikranthig7@gmail.com
 status: Draft
-name: Untitled Pipeline
+name: Multi-lane pipeline
 description: ""
 version: 1
 nodes:
@@ -34,9 +34,9 @@ nodes:
       height: 356
     lanes:
       - id: lane-5u9vm2
-        name: lane-1
+        name: backend
       - id: lane-glhwc5
-        name: lane-2
+        name: ui
   - id: "1791885075168"
     type: Control
     name: Human Gate
@@ -86,8 +86,8 @@ nodes:
     label: Ticket Fetcher
     blockId: axon-ticket-fetcher
     position:
-      x: -349.5838301840004
-      y: -102.46673398799666
+      x: -356.3338301840004
+      y: -150.46673398799666
     config: {}
     timeoutSeconds: 120
   - id: "1791885062016"
