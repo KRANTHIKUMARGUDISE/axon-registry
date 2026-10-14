@@ -6,8 +6,8 @@
   "ticketId": "KG-1",
   "status": "Failed",
   "startedAt": "2026-10-14T07:18:41.320Z",
-  "completedAt": "2026-10-14T07:18:44.976Z",
-  "durationMs": 3656,
+  "completedAt": "2026-10-14T08:32:01.776Z",
+  "durationMs": 4400456,
   "pipelineId": "22042886-d897-4683-b7fe-1663abfda41f",
   "pipelineVersion": 1,
   "blockVersions": {
@@ -35,24 +35,24 @@
       "blockId": "6e64073b-a1ce-4031-8cbd-5b163f7fee2f",
       "blockName": "Lane Planner",
       "status": "Failed",
-      "startedAt": "2026-10-14T07:18:42.245Z",
-      "completedAt": "2026-10-14T07:18:44.938Z",
-      "durationMs": 2693,
+      "startedAt": "2026-10-14T08:31:59.232Z",
+      "completedAt": "2026-10-14T08:32:01.751Z",
+      "durationMs": 2519,
       "inputTokens": 3071,
-      "outputTokens": 110
+      "outputTokens": 114
     }
   ],
   "prUrls": [],
   "repoUrls": [],
-  "catalogVersion": "4b53afbee6529b8c84f405f3e9bcc0643dc4d974",
+  "catalogVersion": "2bac0b0d3e04f535ab3c10a7647bf684e68b1f4f",
   "inputTokens": 3071,
-  "outputTokens": 110,
+  "outputTokens": 114,
   "trigger": "Manual",
   "gateCount": 0,
   "gatesPaused": 0,
   "interventions": 0,
   "aiSteps": 1,
   "builtInSteps": 1,
-  "failureCategory": "Agent",
-  "totalTokens": 3181
+  "failureCategory": "Requirement",
+  "totalTokens": 3185
 }
