@@ -1,0 +1,127 @@
+id: 0a68cb63-7aee-4c62-9a4b-876721a54a7d
+schemaVersion: 2
+createdAt: 2026-10-14T16:36:40.862Z
+updatedAt: 2026-10-14T16:36:40.862Z
+scope: Personal
+owner: ikranthig7@gmail.com
+status: Draft
+derivedFrom:
+  id: 441d0665-cef1-4323-8536-4ca70f75bdb5
+  version: 5
+name: Delivery Pipeline (copy)
+description: Test Delivery Pipeline
+version: 1
+nodes:
+  - id: "1791836951000"
+    type: Control
+    name: Human Gate
+    label: Human Gate
+    blockId: axon-human-gate
+    position:
+      x: 97.71486258437801
+      y: 31.00672010607525
+    config:
+      reason: To review code generated
+      mode: NotifyOnly
+    timeoutSeconds: 120
+    blockVersion: 1
+  - id: "1791836954208"
+    type: IO
+    name: Workspace Provisioner
+    label: Workspace Provisioner
+    blockId: axon-workspace-provisioner
+    position:
+      x: -242.76639344262298
+      y: -206.07862222757956
+    config: {}
+    timeoutSeconds: 120
+    blockVersion: 7
+  - id: "1791842634617"
+    type: Execution
+    name: PR Creator
+    label: PR Creator
+    blockId: axon-pr-creator
+    position:
+      x: 219.0239271938283
+      y: 111.04812560270005
+    config: {}
+    timeoutSeconds: 120
+    blockVersion: 5
+  - id: "1791852663852"
+    type: forEach
+    name: ForEach
+    label: ForEach
+    blockId: ""
+    position:
+      x: -55.542264344262314
+      y: -144.59634161041464
+    maxItems: 10
+    onEmpty: fail
+    size:
+      width: 240
+      height: 140
+  - id: "1791890196866"
+    type: Execution
+    name: Demo Planner
+    label: Demo Planner
+    blockId: e2e32819-2be0-4111-ba24-6763e8542abd
+    position:
+      x: -306.58743671648995
+      y: -330.7602760366442
+    config: {}
+    timeoutSeconds: 120
+    blockVersion: 3
+  - id: "1791890549489"
+    type: IO
+    name: Jira Update
+    label: Jira Update
+    blockId: axon-jira-update
+    position:
+      x: 262.6888334739633
+      y: 191.6145130183221
+    config:
+      addLabels:
+        - axon-delivered
+    timeoutSeconds: 120
+    blockVersion: 1
+  - id: "1791842573217"
+    type: Execution
+    name: Demo Coder
+    label: Demo Coder
+    blockId: 48d69ae0-08b9-42c6-88bb-f493c786d7ce
+    parentId: "1791852663852"
+    position:
+      x: 54.80380605110901
+      y: 74.40712391513978
+    config: {}
+    timeoutSeconds: 120
+    blockVersion: 1
+edges:
+  - id: 1791836951000-bottom-1791842634617-top
+    sourceNodeId: "1791836951000"
+    targetNodeId: "1791842634617"
+    isDefault: false
+    condition: null
+  - id: 1791852663852-bottom-1791836951000-left
+    sourceNodeId: "1791852663852"
+    targetNodeId: "1791836951000"
+    isDefault: false
+    condition: null
+  - id: 1791836954208-bottom-1791852663852-left
+    sourceNodeId: "1791836954208"
+    targetNodeId: "1791852663852"
+    isDefault: false
+    condition: null
+  - id: 1791890196866-bottom-1791836954208-top
+    sourceNodeId: "1791890196866"
+    targetNodeId: "1791836954208"
+    isDefault: false
+    condition: null
+  - id: 1791842634617-bottom-1791890549489-top
+    sourceNodeId: "1791842634617"
+    targetNodeId: "1791890549489"
+    isDefault: false
+    condition: null
+onFailure: []
+onFailureOnCancel: false
+createdByName: Kranthi G
