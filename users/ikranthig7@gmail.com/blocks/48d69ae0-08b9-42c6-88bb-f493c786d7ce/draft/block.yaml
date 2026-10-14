@@ -1,0 +1,31 @@
+id: 48d69ae0-08b9-42c6-88bb-f493c786d7ce
+schemaVersion: 2
+createdAt: 2026-10-12T22:01:44.336Z
+updatedAt: 2026-10-14T12:50:32.107Z
+scope: Personal
+owner: ikranthig7@gmail.com
+status: Draft
+name: Demo Coder
+role: Execution
+description: Demo coding agent for AXON ForEach testing. Runs inside one repo and appends the line given in its task to README.md.
+version: 2
+tags: []
+sourceType: Local
+agentRuntime: Claude
+artifactFormat: Skill
+artifactName: Demo Coder
+entryPointPath: SKILL.md
+contextRequirements:
+  - task
+  - shared
+  - item
+  - itemKey
+outputSchema: []
+contextMode: Selective
+executionType: Agentic
+allowedTools:
+  - Read
+  - Edit
+defaultTimeoutSeconds: 120
+visibility: Team
+executionAgreementAcceptedAt: 2026-10-14T12:50:32.111Z
