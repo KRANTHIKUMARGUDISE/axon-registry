@@ -4,7 +4,7 @@ scope: Personal
 owner: ikranthig7@gmail.com
 name: Deliver with Jira lable
 source: jira
-enabled: false
+enabled: true
 jiraProjectKey: KG
 readyLabel: axon-ready
 pipelineId: 22042886-d897-4683-b7fe-1663abfda41f
@@ -12,4 +12,4 @@ pipelineVersion: 1
 pollIntervalMinutes: 2
 postOutcomeComment: true
 createdAt: 2026-10-13T11:05:01.997Z
-updatedAt: 2026-10-14T18:25:16.907Z
+updatedAt: 2026-10-14T18:29:44.757Z
