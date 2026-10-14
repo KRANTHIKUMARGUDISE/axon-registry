@@ -1,7 +1,7 @@
 id: 22042886-d897-4683-b7fe-1663abfda41f
 schemaVersion: 2
 createdAt: 2026-10-13T09:52:37.513Z
-updatedAt: 2026-10-14T08:43:16.074Z
+updatedAt: 2026-10-14T08:50:39.510Z
 scope: Personal
 owner: ikranthig7@gmail.com
 status: Draft
@@ -25,12 +25,12 @@ nodes:
     label: ForEach
     blockId: ""
     position:
-      x: 60.656086392094444
-      y: 44.85043150293674
+      x: -14.819521190267324
+      y: 83.8895388731238
     maxItems: 10
     onEmpty: fail
     size:
-      width: 420
+      width: 776
       height: 506
     lanes:
       - id: lane-5u9vm2
@@ -45,8 +45,8 @@ nodes:
     label: Human Gate
     blockId: axon-human-gate
     position:
-      x: 266.9082275167709
-      y: 621.9693708315442
+      x: 287.7290847808708
+      y: 655.8032638857064
     config:
       reason: test
     timeoutSeconds: 120
@@ -56,8 +56,8 @@ nodes:
     label: PR Creator
     blockId: axon-pr-creator
     position:
-      x: 395.97975312280084
-      y: 724.9552442203533
+      x: 428.51234259795683
+      y: 728.859154957372
     config: {}
     timeoutSeconds: 120
   - id: "1791885108375"
@@ -111,8 +111,8 @@ nodes:
     blockId: 48d69ae0-08b9-42c6-88bb-f493c786d7ce
     parentId: "1791885057952"
     position:
-      x: 95.17169293972643
-      y: 270.38214725503445
+      x: 31.407817568420782
+      y: 269.0808436760282
     config: {}
     timeoutSeconds: 120
     laneId: lane-glhwc5
@@ -128,6 +128,33 @@ nodes:
     config: {}
     timeoutSeconds: 120
     laneId: lane-p88rvs
+  - id: "1791967759244"
+    type: Control
+    name: Human Gate
+    label: Human Gate
+    blockId: axon-human-gate
+    parentId: "1791885057952"
+    position:
+      x: 292.5120184193122
+      y: 114.39308631255122
+    config:
+      reason: test
+      checklist: []
+    timeoutSeconds: 120
+    laneId: lane-5u9vm2
+  - id: "1791967805996"
+    type: Control
+    name: Human Gate
+    label: Human Gate
+    blockId: axon-human-gate
+    parentId: "1791885057952"
+    position:
+      x: 282.10158978726236
+      y: 264.04299789826854
+    config:
+      reason: teset
+    timeoutSeconds: 120
+    laneId: lane-glhwc5
 edges:
   - id: 1791885002519-bottom-1791885057952-top
     sourceNodeId: "1791885002519"
@@ -157,6 +184,16 @@ edges:
   - id: 1791912370522-bottom-1791912113387-top
     sourceNodeId: "1791912370522"
     targetNodeId: "1791912113387"
+    isDefault: false
+    condition: null
+  - id: 1791885062016-right-1791967759244-left
+    sourceNodeId: "1791885062016"
+    targetNodeId: "1791967759244"
+    isDefault: false
+    condition: null
+  - id: 1791911725955-right-1791967805996-left
+    sourceNodeId: "1791911725955"
+    targetNodeId: "1791967805996"
     isDefault: false
     condition: null
 onFailure: []
