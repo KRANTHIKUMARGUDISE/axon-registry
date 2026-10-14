@@ -1,0 +1,152 @@
+{
+  "id": "d7d7b889-20a0-4d52-b471-e2375a0e81ff",
+  "schemaVersion": 2,
+  "scope": "Personal",
+  "owner": "ikranthig7@gmail.com",
+  "ticketId": "KG-1",
+  "status": "Completed",
+  "startedAt": "2026-10-14T08:40:29.850Z",
+  "completedAt": "2026-10-14T08:51:14.212Z",
+  "durationMs": 644362,
+  "pipelineId": "22042886-d897-4683-b7fe-1663abfda41f",
+  "pipelineVersion": 1,
+  "blockVersions": {
+    "axon-workspace-provisioner": 7,
+    "axon-human-gate": 1,
+    "axon-pr-creator": 5,
+    "axon-jira-update": 1,
+    "6e64073b-a1ce-4031-8cbd-5b163f7fee2f": 1,
+    "axon-ticket-fetcher": 2,
+    "48d69ae0-08b9-42c6-88bb-f493c786d7ce": 1
+  },
+  "gates": [
+    {
+      "nodeId": "1791885075168",
+      "blockName": "Human Gate",
+      "outcome": "approved",
+      "by": "ikranthig7@gmail.com",
+      "at": "2026-10-14T08:50:55.879Z"
+    }
+  ],
+  "steps": [
+    {
+      "nodeId": "1791912370522",
+      "blockId": "axon-ticket-fetcher",
+      "blockName": "Ticket Fetcher",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:40:29.884Z",
+      "completedAt": "2026-10-14T08:40:31.001Z",
+      "durationMs": 1117
+    },
+    {
+      "nodeId": "1791912113387",
+      "blockId": "6e64073b-a1ce-4031-8cbd-5b163f7fee2f",
+      "blockName": "Lane Planner",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:40:31.081Z",
+      "completedAt": "2026-10-14T08:40:35.519Z",
+      "durationMs": 4438,
+      "inputTokens": 3079,
+      "outputTokens": 323
+    },
+    {
+      "nodeId": "1791885002519",
+      "blockId": "axon-workspace-provisioner",
+      "blockName": "Workspace Provisioner",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:40:35.591Z",
+      "completedAt": "2026-10-14T08:40:42.599Z",
+      "durationMs": 7008
+    },
+    {
+      "nodeId": "1791885057952",
+      "blockName": "ForEach",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:40:42.667Z",
+      "completedAt": "2026-10-14T08:41:09.475Z",
+      "durationMs": 26808
+    },
+    {
+      "nodeId": "1791885062016",
+      "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
+      "blockName": "Demo Coder",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:40:42.727Z",
+      "completedAt": "2026-10-14T08:40:55.313Z",
+      "durationMs": 12586,
+      "inputTokens": 6,
+      "outputTokens": 400,
+      "costUsd": 0.037662
+    },
+    {
+      "nodeId": "1791911725955",
+      "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
+      "blockName": "Demo Coder",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:40:55.358Z",
+      "completedAt": "2026-10-14T08:41:09.444Z",
+      "durationMs": 14086,
+      "inputTokens": 6,
+      "outputTokens": 399,
+      "costUsd": 0.0376465
+    },
+    {
+      "nodeId": "1791885075168",
+      "blockId": "axon-human-gate",
+      "blockName": "Human Gate",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:41:09.556Z",
+      "completedAt": "2026-10-14T08:50:55.878Z",
+      "durationMs": 586322
+    },
+    {
+      "nodeId": "1791885100096",
+      "blockId": "axon-pr-creator",
+      "blockName": "PR Creator",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:50:55.952Z",
+      "completedAt": "2026-10-14T08:51:12.683Z",
+      "durationMs": 16731
+    },
+    {
+      "nodeId": "1791885108375",
+      "blockId": "axon-jira-update",
+      "blockName": "Jira Update",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:51:12.786Z",
+      "completedAt": "2026-10-14T08:51:14.161Z",
+      "durationMs": 1375
+    }
+  ],
+  "prUrls": [
+    "https://github.com/KRANTHIKUMARGUDISE/axon-demo-api/pull/9"
+  ],
+  "repoUrls": [],
+  "catalogVersion": "414a4fd75535cf884513662e7180a640ad9098ef",
+  "inputTokens": 3091,
+  "outputTokens": 1122,
+  "costUsd": 0.0753085,
+  "trigger": "Manual",
+  "gateCount": 1,
+  "gatesPaused": 1,
+  "interventions": 0,
+  "aiSteps": 3,
+  "builtInSteps": 5,
+  "totalTokens": 4213,
+  "items": [
+    {
+      "lane": "backend",
+      "status": "done",
+      "tokens": 406
+    },
+    {
+      "lane": "ui",
+      "status": "done",
+      "tokens": 405
+    }
+  ],
+  "laneCounts": {
+    "backend": 1,
+    "ui": 1
+  }
+}
