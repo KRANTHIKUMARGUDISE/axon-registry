@@ -4,7 +4,7 @@
   "scope": "Personal",
   "owner": "ikranthig7@gmail.com",
   "ticketId": "KG-1",
-  "status": "Failed",
+  "status": "Superseded",
   "startedAt": "2026-10-14T07:18:41.320Z",
   "completedAt": "2026-10-14T08:32:01.776Z",
   "durationMs": 4400456,
@@ -19,6 +19,7 @@
     "axon-ticket-fetcher": 2,
     "48d69ae0-08b9-42c6-88bb-f493c786d7ce": 1
   },
+  "supersededBy": "aa7c73ca-4901-4b0e-9e34-62bd74473afb",
   "gates": [],
   "steps": [
     {

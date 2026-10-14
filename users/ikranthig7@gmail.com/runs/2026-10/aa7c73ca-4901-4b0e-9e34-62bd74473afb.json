@@ -1,0 +1,100 @@
+{
+  "id": "aa7c73ca-4901-4b0e-9e34-62bd74473afb",
+  "schemaVersion": 2,
+  "scope": "Personal",
+  "owner": "ikranthig7@gmail.com",
+  "ticketId": "KG-1",
+  "status": "Cancelled",
+  "startedAt": "2026-10-14T08:34:46.047Z",
+  "pipelineId": "22042886-d897-4683-b7fe-1663abfda41f",
+  "pipelineVersion": 1,
+  "blockVersions": {
+    "axon-workspace-provisioner": 7,
+    "axon-human-gate": 1,
+    "axon-pr-creator": 5,
+    "axon-jira-update": 1,
+    "6e64073b-a1ce-4031-8cbd-5b163f7fee2f": 1,
+    "axon-ticket-fetcher": 2,
+    "48d69ae0-08b9-42c6-88bb-f493c786d7ce": 1
+  },
+  "rerunOf": "2a44cb62-502e-45f3-925d-ae63f37b0125",
+  "rerunReason": "AgentUpdated",
+  "attemptNumber": 2,
+  "gates": [],
+  "steps": [
+    {
+      "nodeId": "1791912370522",
+      "blockId": "axon-ticket-fetcher",
+      "blockName": "Ticket Fetcher",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:34:46.071Z",
+      "completedAt": "2026-10-14T08:34:46.998Z",
+      "durationMs": 927
+    },
+    {
+      "nodeId": "1791912113387",
+      "blockId": "6e64073b-a1ce-4031-8cbd-5b163f7fee2f",
+      "blockName": "Lane Planner",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:34:47.041Z",
+      "completedAt": "2026-10-14T08:34:51.483Z",
+      "durationMs": 4442,
+      "inputTokens": 3075,
+      "outputTokens": 329
+    },
+    {
+      "nodeId": "1791885002519",
+      "blockId": "axon-workspace-provisioner",
+      "blockName": "Workspace Provisioner",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:34:51.524Z",
+      "completedAt": "2026-10-14T08:34:55.409Z",
+      "durationMs": 3885
+    },
+    {
+      "nodeId": "1791885057952",
+      "blockName": "ForEach",
+      "status": "Cancelled",
+      "startedAt": "2026-10-14T08:34:55.450Z",
+      "completedAt": "2026-10-14T08:35:05.427Z",
+      "durationMs": 9977
+    },
+    {
+      "nodeId": "1791885062016",
+      "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
+      "blockName": "Demo Coder",
+      "status": "Cancelled",
+      "startedAt": "2026-10-14T08:34:55.479Z",
+      "completedAt": "2026-10-14T08:35:05.427Z",
+      "durationMs": 9948
+    }
+  ],
+  "prUrls": [],
+  "repoUrls": [],
+  "catalogVersion": "1e445f66ec120533ea8dfceaed5337bd871b4a8d",
+  "inputTokens": 3075,
+  "outputTokens": 329,
+  "trigger": "Manual",
+  "gateCount": 0,
+  "gatesPaused": 0,
+  "interventions": 1,
+  "aiSteps": 2,
+  "builtInSteps": 2,
+  "totalTokens": 3404,
+  "items": [
+    {
+      "lane": "backend",
+      "status": "cancelled",
+      "tokens": 0
+    },
+    {
+      "lane": "ui",
+      "status": "pending",
+      "tokens": 0
+    }
+  ],
+  "laneCounts": {
+    "backend": 1,
+    "ui": 1
+  }
+}
