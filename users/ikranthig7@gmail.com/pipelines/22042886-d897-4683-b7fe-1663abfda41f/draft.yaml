@@ -1,12 +1,12 @@
 id: 22042886-d897-4683-b7fe-1663abfda41f
 schemaVersion: 2
 createdAt: 2026-10-13T09:52:37.513Z
-updatedAt: 2026-10-14T13:56:28.277Z
+updatedAt: 2026-10-14T14:50:03.628Z
 scope: Personal
 owner: ikranthig7@gmail.com
 status: Draft
 name: Multi-lane pipeline
-description: ""
+description: Test description for multi-lane pipeline.
 version: 1
 nodes:
   - id: "1791885002519"

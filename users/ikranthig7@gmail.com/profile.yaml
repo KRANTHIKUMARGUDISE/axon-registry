@@ -8,9 +8,6 @@ team: KG
 machines:
   - id: 89202d98-fd33-4338-8277-d0d05c3a898a
     name: KGUDISE
-    lastSeen: 2026-10-14T14:44:56.682Z
+    lastSeen: 2026-10-14T14:53:54.231Z
 pausedAll: true
 pausedAt: 2026-10-14T14:09:51.801Z
-activeMachine:
-  id: 89202d98-fd33-4338-8277-d0d05c3a898a
-  heartbeatAt: 2026-10-14T14:44:56.683Z
