@@ -1,10 +1,10 @@
 id: 6e64073b-a1ce-4031-8cbd-5b163f7fee2f
 schemaVersion: 2
 createdAt: 2026-10-13T17:19:56.194Z
-updatedAt: 2026-10-13T17:19:56.194Z
+updatedAt: 2026-10-14T16:48:04.622Z
 scope: Personal
 owner: ikranthig7@gmail.com
-status: Draft
+status: Published
 name: Lane Planner
 role: Execution
 description: Splits a Jira story into work items, one per repository and specialist lane, ordered by dependency, for a multi-lane ForEach. Chooses repos from the AXON catalog and lanes from the ForEach.
