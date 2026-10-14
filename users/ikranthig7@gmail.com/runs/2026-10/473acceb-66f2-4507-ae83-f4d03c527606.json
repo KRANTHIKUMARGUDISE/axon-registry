@@ -1,0 +1,122 @@
+{
+  "id": "473acceb-66f2-4507-ae83-f4d03c527606",
+  "schemaVersion": 2,
+  "scope": "Personal",
+  "owner": "ikranthig7@gmail.com",
+  "ticketId": "KG-1",
+  "status": "Completed",
+  "startedAt": "2026-10-14T18:12:24.477Z",
+  "completedAt": "2026-10-14T18:13:05.060Z",
+  "durationMs": 40583,
+  "pipelineId": "441d0665-cef1-4323-8536-4ca70f75bdb5",
+  "pipelineVersion": 5,
+  "blockVersions": {
+    "axon-human-gate": 1,
+    "axon-workspace-provisioner": 7,
+    "axon-pr-creator": 5,
+    "e2e32819-2be0-4111-ba24-6763e8542abd": 3,
+    "axon-jira-update": 1,
+    "48d69ae0-08b9-42c6-88bb-f493c786d7ce": 1
+  },
+  "rerunOf": "91b4f914-ae41-4d9e-85aa-fe832732956c",
+  "rerunReason": "RequirementUpdated",
+  "attemptNumber": 8,
+  "gates": [],
+  "steps": [
+    {
+      "nodeId": "1791890196866",
+      "blockId": "e2e32819-2be0-4111-ba24-6763e8542abd",
+      "blockName": "Demo Planner",
+      "status": "Completed",
+      "startedAt": "2026-10-14T18:12:24.535Z",
+      "completedAt": "2026-10-14T18:12:26.953Z",
+      "durationMs": 2418,
+      "inputTokens": 689,
+      "outputTokens": 222,
+      "costUsd": 0
+    },
+    {
+      "nodeId": "1791836954208",
+      "blockId": "axon-workspace-provisioner",
+      "blockName": "Workspace Provisioner",
+      "status": "Completed",
+      "startedAt": "2026-10-14T18:12:26.998Z",
+      "completedAt": "2026-10-14T18:12:30.727Z",
+      "durationMs": 3729
+    },
+    {
+      "nodeId": "1791852663852",
+      "blockName": "ForEach",
+      "status": "Completed",
+      "startedAt": "2026-10-14T18:12:30.773Z",
+      "completedAt": "2026-10-14T18:12:51.080Z",
+      "durationMs": 20307
+    },
+    {
+      "nodeId": "1791842573217",
+      "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
+      "blockName": "Demo Coder",
+      "status": "Completed",
+      "startedAt": "2026-10-14T18:12:30.806Z",
+      "completedAt": "2026-10-14T18:12:42.307Z",
+      "durationMs": 11501,
+      "inputTokens": 6,
+      "outputTokens": 354,
+      "costUsd": 0.044545749999999995
+    },
+    {
+      "nodeId": "1791842573217",
+      "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
+      "blockName": "Demo Coder",
+      "status": "Completed",
+      "startedAt": "2026-10-14T18:12:42.344Z",
+      "completedAt": "2026-10-14T18:12:51.056Z",
+      "durationMs": 8712,
+      "inputTokens": 6,
+      "outputTokens": 359,
+      "costUsd": 0.0355405
+    },
+    {
+      "nodeId": "1791836951000",
+      "blockId": "axon-human-gate",
+      "blockName": "Human Gate",
+      "status": "Completed",
+      "startedAt": "2026-10-14T18:12:51.136Z",
+      "completedAt": "2026-10-14T18:12:51.188Z",
+      "durationMs": 52
+    },
+    {
+      "nodeId": "1791842634617",
+      "blockId": "axon-pr-creator",
+      "blockName": "PR Creator",
+      "status": "Completed",
+      "startedAt": "2026-10-14T18:12:51.279Z",
+      "completedAt": "2026-10-14T18:13:03.870Z",
+      "durationMs": 12591
+    },
+    {
+      "nodeId": "1791890549489",
+      "blockId": "axon-jira-update",
+      "blockName": "Jira Update",
+      "status": "Completed",
+      "startedAt": "2026-10-14T18:13:03.943Z",
+      "completedAt": "2026-10-14T18:13:05.018Z",
+      "durationMs": 1075
+    }
+  ],
+  "prUrls": [
+    "https://github.com/KRANTHIKUMARGUDISE/axon-demo-api/pull/13"
+  ],
+  "repoUrls": [],
+  "inputTokens": 701,
+  "outputTokens": 935,
+  "costUsd": 0.08008625,
+  "trigger": "Watcher",
+  "ruleId": "0b580f7a-3946-4e0f-ab25-ce54f58409e1",
+  "gateCount": 1,
+  "gatesPaused": 0,
+  "interventions": 0,
+  "aiSteps": 3,
+  "builtInSteps": 4,
+  "totalTokens": 1636
+}
