@@ -1,0 +1,147 @@
+{
+  "id": "508c3eb9-988e-4669-993a-f2577d565199",
+  "schemaVersion": 2,
+  "scope": "Personal",
+  "owner": "ikranthig7@gmail.com",
+  "ticketId": "KG-1",
+  "status": "Failed",
+  "startedAt": "2026-10-14T08:54:51.293Z",
+  "completedAt": "2026-10-14T08:56:05.994Z",
+  "durationMs": 74701,
+  "pipelineId": "22042886-d897-4683-b7fe-1663abfda41f",
+  "pipelineVersion": 1,
+  "blockVersions": {
+    "axon-workspace-provisioner": 7,
+    "axon-human-gate": 1,
+    "axon-pr-creator": 5,
+    "axon-jira-update": 1,
+    "6e64073b-a1ce-4031-8cbd-5b163f7fee2f": 1,
+    "axon-ticket-fetcher": 2,
+    "48d69ae0-08b9-42c6-88bb-f493c786d7ce": 1
+  },
+  "gates": [
+    {
+      "nodeId": "1791967759244",
+      "blockName": "Human Gate",
+      "outcome": "approved",
+      "by": "ikranthig7@gmail.com",
+      "at": "2026-10-14T08:55:32.068Z"
+    },
+    {
+      "nodeId": "1791967805996",
+      "blockName": "Human Gate",
+      "outcome": "rejected",
+      "by": "ikranthig7@gmail.com",
+      "at": "2026-10-14T08:56:05.994Z"
+    }
+  ],
+  "steps": [
+    {
+      "nodeId": "1791912370522",
+      "blockId": "axon-ticket-fetcher",
+      "blockName": "Ticket Fetcher",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:54:51.322Z",
+      "completedAt": "2026-10-14T08:54:52.143Z",
+      "durationMs": 821
+    },
+    {
+      "nodeId": "1791912113387",
+      "blockId": "6e64073b-a1ce-4031-8cbd-5b163f7fee2f",
+      "blockName": "Lane Planner",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:54:52.194Z",
+      "completedAt": "2026-10-14T08:54:56.994Z",
+      "durationMs": 4800,
+      "inputTokens": 3081,
+      "outputTokens": 353
+    },
+    {
+      "nodeId": "1791885002519",
+      "blockId": "axon-workspace-provisioner",
+      "blockName": "Workspace Provisioner",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:54:57.074Z",
+      "completedAt": "2026-10-14T08:55:05.463Z",
+      "durationMs": 8389
+    },
+    {
+      "nodeId": "1791885057952",
+      "blockName": "ForEach",
+      "status": "Running",
+      "startedAt": "2026-10-14T08:55:32.146Z"
+    },
+    {
+      "nodeId": "1791885062016",
+      "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
+      "blockName": "Demo Coder",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:55:05.605Z",
+      "completedAt": "2026-10-14T08:55:20.587Z",
+      "durationMs": 14982,
+      "inputTokens": 6,
+      "outputTokens": 454,
+      "costUsd": 0.0396895
+    },
+    {
+      "nodeId": "1791967759244",
+      "blockId": "axon-human-gate",
+      "blockName": "Human Gate",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:55:20.632Z",
+      "completedAt": "2026-10-14T08:55:32.068Z",
+      "durationMs": 11436
+    },
+    {
+      "nodeId": "1791911725955",
+      "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
+      "blockName": "Demo Coder",
+      "status": "Completed",
+      "startedAt": "2026-10-14T08:55:32.191Z",
+      "completedAt": "2026-10-14T08:55:45.267Z",
+      "durationMs": 13076,
+      "inputTokens": 6,
+      "outputTokens": 366,
+      "costUsd": 0.03689825000000001
+    },
+    {
+      "nodeId": "1791967805996",
+      "blockId": "axon-human-gate",
+      "blockName": "Human Gate",
+      "status": "Failed",
+      "startedAt": "2026-10-14T08:55:45.309Z",
+      "completedAt": "2026-10-14T08:56:05.994Z",
+      "durationMs": 20685
+    }
+  ],
+  "prUrls": [],
+  "repoUrls": [],
+  "catalogVersion": "72b5c6b935c78d70cf5b22f59d76ea05bc194b2a",
+  "inputTokens": 3093,
+  "outputTokens": 1173,
+  "costUsd": 0.07658775000000001,
+  "trigger": "Manual",
+  "gateCount": 2,
+  "gatesPaused": 2,
+  "interventions": 1,
+  "aiSteps": 3,
+  "builtInSteps": 4,
+  "failureCategory": "Agent",
+  "totalTokens": 4266,
+  "items": [
+    {
+      "lane": "backend",
+      "status": "done",
+      "tokens": 460
+    },
+    {
+      "lane": "ui",
+      "status": "failed",
+      "tokens": 372
+    }
+  ],
+  "laneCounts": {
+    "backend": 1,
+    "ui": 1
+  }
+}
