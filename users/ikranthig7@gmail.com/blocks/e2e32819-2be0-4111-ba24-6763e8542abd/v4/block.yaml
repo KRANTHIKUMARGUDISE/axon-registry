@@ -1,10 +1,12 @@
 id: e2e32819-2be0-4111-ba24-6763e8542abd
 schemaVersion: 2
 createdAt: 2026-10-12T22:02:15.215Z
-updatedAt: 2026-10-14T16:08:28.920Z
+updatedAt: 2026-10-14T17:09:39.340Z
 scope: Personal
 owner: ikranthig7@gmail.com
-status: Draft
+status: Published
+versionLabel: plan
+changeNote: test content for test publis of demo planner prompt based block. test content for test publis of demo planner prompt based block. test content for test publis of demo planner prompt based block
 name: Demo Planner
 role: Execution
 description: Demo planner for AXON multi-repo testing. Returns a work-item list with one item per demo repo (axon-demo-api, axon-demo-web) for a ForEach to run..
