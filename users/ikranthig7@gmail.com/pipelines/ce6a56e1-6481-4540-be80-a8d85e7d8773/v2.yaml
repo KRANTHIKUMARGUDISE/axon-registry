@@ -1,10 +1,10 @@
 id: ce6a56e1-6481-4540-be80-a8d85e7d8773
 schemaVersion: 3
 createdAt: 2026-10-15T12:00:14.052Z
-updatedAt: 2026-10-15T12:06:04.905Z
+updatedAt: 2026-10-15T12:07:36.042Z
 scope: Personal
 owner: ikranthig7@gmail.com
-status: Draft
+status: Published
 name: PR Review Pipeline
 description: ""
 version: 2
@@ -32,6 +32,7 @@ nodes:
       y: 71.17647058823528
     config: {}
     timeoutSeconds: 120
+    blockVersion: 1
 edges:
   - id: 1792065764257-bottom-1792065587885-top
     sourceNodeId: "1792065764257"
