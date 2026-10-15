@@ -1,0 +1,20 @@
+id: 00907ce0-5c93-40fb-80b1-170f7e9ba064
+schemaVersion: 3
+scope: Personal
+owner: ikranthig7@gmail.com
+name: Delivery from In Progress status
+enabled: false
+trigger:
+  source: jira
+  project: KG
+  ready: status
+  value: In Progress
+  scope: anyone
+pipelineId: 441d0665-cef1-4323-8536-4ca70f75bdb5
+pipelineVersion: 5
+pollIntervalMinutes: 5
+postOutcome: true
+maxPerSubjectPerDay: 3
+cooldownMinutes: 10
+createdAt: 2026-10-15T11:57:07.204Z
+updatedAt: 2026-10-15T11:57:07.204Z
