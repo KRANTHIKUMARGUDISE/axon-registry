@@ -1,0 +1,44 @@
+id: ce6a56e1-6481-4540-be80-a8d85e7d8773
+schemaVersion: 3
+createdAt: 2026-10-15T12:00:14.052Z
+updatedAt: 2026-10-15T12:05:36.727Z
+scope: Personal
+owner: ikranthig7@gmail.com
+status: Draft
+name: PR Review Pipeline
+description: ""
+version: 2
+nodes:
+  - id: "1792065587885"
+    type: block
+    name: Update PR
+    label: Update PR
+    blockId: axon-pr-update
+    position:
+      x: 232.1764705882353
+      y: 185.76470588235293
+    config: {}
+    timeoutSeconds: 120
+    blockVersion: 1
+  - id: "1792065764257"
+    type: block
+    name: Find PRs
+    label: Find PRs
+    blockId: axon-find-prs
+    position:
+      x: 231.58823529411757
+      y: 71.17647058823528
+    config: {}
+    timeoutSeconds: 120
+edges:
+  - id: 1792065764257-bottom-1792065587885-top
+    sourceNodeId: "1792065764257"
+    targetNodeId: "1792065587885"
+    isDefault: false
+    condition: null
+    sourceHandle: bottom
+    targetHandle: top
+onFailure: []
+onFailureOnCancel: false
+startsFrom: pullRequest
+createdByName: Kranthi G
