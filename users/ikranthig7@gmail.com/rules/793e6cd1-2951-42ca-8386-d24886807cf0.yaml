@@ -3,7 +3,7 @@ schemaVersion: 3
 scope: Personal
 owner: ikranthig7@gmail.com
 name: Deliver by status
-enabled: false
+enabled: true
 trigger:
   source: jira
   project: KG
@@ -17,4 +17,4 @@ postOutcome: true
 maxPerSubjectPerDay: 3
 cooldownMinutes: 10
 createdAt: 2026-10-14T15:52:57.918Z
-updatedAt: 2026-10-14T18:24:09.713Z
+updatedAt: 2026-10-15T11:54:24.206Z
