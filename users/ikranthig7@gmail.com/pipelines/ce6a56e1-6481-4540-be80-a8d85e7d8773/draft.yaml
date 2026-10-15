@@ -1,7 +1,7 @@
 id: ce6a56e1-6481-4540-be80-a8d85e7d8773
 schemaVersion: 3
 createdAt: 2026-10-15T12:00:14.052Z
-updatedAt: 2026-10-15T12:05:36.727Z
+updatedAt: 2026-10-15T12:06:04.905Z
 scope: Personal
 owner: ikranthig7@gmail.com
 status: Draft
@@ -17,7 +17,9 @@ nodes:
     position:
       x: 232.1764705882353
       y: 185.76470588235293
-    config: {}
+    config:
+      addLabels:
+        - merge
     timeoutSeconds: 120
     blockVersion: 1
   - id: "1792065764257"
