@@ -1,16 +1,20 @@
 id: 793e6cd1-2951-42ca-8386-d24886807cf0
-schemaVersion: 2
+schemaVersion: 3
 scope: Personal
 owner: ikranthig7@gmail.com
 name: Deliver by status
-source: jira
 enabled: false
-jiraProjectKey: KG
-readyLabel: axon-ready
-readyStatus: In Progress
+trigger:
+  source: jira
+  project: KG
+  ready: status
+  value: In Progress
+  scope: assignedToMe
 pipelineId: 441d0665-cef1-4323-8536-4ca70f75bdb5
 pipelineVersion: 5
 pollIntervalMinutes: 5
-postOutcomeComment: true
+postOutcome: true
+maxPerSubjectPerDay: 3
+cooldownMinutes: 10
 createdAt: 2026-10-14T15:52:57.918Z
 updatedAt: 2026-10-14T18:24:09.713Z

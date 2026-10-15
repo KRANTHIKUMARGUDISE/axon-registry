@@ -1,15 +1,20 @@
 id: 0b580f7a-3946-4e0f-ab25-ce54f58409e1
-schemaVersion: 2
+schemaVersion: 3
 scope: Personal
 owner: ikranthig7@gmail.com
 name: Deliver with Jira lable
-source: jira
 enabled: false
-jiraProjectKey: KG
-readyLabel: axon-ready
+trigger:
+  source: jira
+  project: KG
+  ready: label
+  value: axon-ready
+  scope: assignedToMe
 pipelineId: 22042886-d897-4683-b7fe-1663abfda41f
 pipelineVersion: 1
 pollIntervalMinutes: 2
-postOutcomeComment: true
+postOutcome: true
+maxPerSubjectPerDay: 3
+cooldownMinutes: 10
 createdAt: 2026-10-13T11:05:01.997Z
 updatedAt: 2026-10-15T10:27:42.615Z

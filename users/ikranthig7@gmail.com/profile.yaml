@@ -1,5 +1,5 @@
 id: ikranthig7@gmail.com
-schemaVersion: 2
+schemaVersion: 3
 scope: Personal
 owner: ikranthig7@gmail.com
 email: ikranthig7@gmail.com
@@ -8,6 +8,6 @@ team: KG
 machines:
   - id: 89202d98-fd33-4338-8277-d0d05c3a898a
     name: KGUDISE
-    lastSeen: 2026-10-15T10:27:47.024Z
+    lastSeen: 2026-10-15T10:52:23.064Z
 pausedAll: true
 pausedAt: 2026-10-14T14:09:51.801Z
