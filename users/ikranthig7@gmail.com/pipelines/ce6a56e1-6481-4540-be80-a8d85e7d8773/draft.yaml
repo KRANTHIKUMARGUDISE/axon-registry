@@ -1,0 +1,60 @@
+id: ce6a56e1-6481-4540-be80-a8d85e7d8773
+schemaVersion: 3
+createdAt: 2026-10-15T12:00:14.052Z
+updatedAt: 2026-10-15T12:00:14.052Z
+scope: Personal
+owner: ikranthig7@gmail.com
+status: Draft
+name: Untitled Pipeline
+description: ""
+version: 1
+nodes:
+  - id: "1792065549212"
+    type: block
+    name: Demo Coder
+    label: Demo Coder
+    blockId: 48d69ae0-08b9-42c6-88bb-f493c786d7ce
+    position:
+      x: 191
+      y: 122.70588235294116
+    config: {}
+    timeoutSeconds: 120
+  - id: "1792065551437"
+    type: block
+    name: Fetch PR
+    label: Fetch PR
+    blockId: axon-fetch-pr
+    position:
+      x: 129.82352941176467
+      y: 30.47058823529409
+    config: {}
+    timeoutSeconds: 120
+  - id: "1792065587885"
+    type: block
+    name: Update PR
+    label: Update PR
+    blockId: axon-pr-update
+    position:
+      x: 281.5882352941176
+      y: 228.1176470588235
+    config: {}
+    timeoutSeconds: 120
+edges:
+  - id: 1792065551437-bottom-1792065549212-top
+    sourceNodeId: "1792065551437"
+    targetNodeId: "1792065549212"
+    isDefault: false
+    condition: null
+    sourceHandle: bottom
+    targetHandle: top
+  - id: 1792065549212-bottom-1792065587885-top
+    sourceNodeId: "1792065549212"
+    targetNodeId: "1792065587885"
+    isDefault: false
+    condition: null
+    sourceHandle: bottom
+    targetHandle: top
+onFailure: []
+onFailureOnCancel: false
+startsFrom: jiraIssue
+createdByName: Kranthi G
