@@ -6,7 +6,7 @@
   "ticketId": "KG-1",
   "subjectType": "jiraIssue",
   "subjectKey": "KG-1",
-  "status": "Failed",
+  "status": "Superseded",
   "startedAt": "2026-10-16T10:51:43.548Z",
   "completedAt": "2026-10-16T10:52:51.519Z",
   "durationMs": 67971,
@@ -21,6 +21,7 @@
     "axon-ticket-fetcher": 2,
     "48d69ae0-08b9-42c6-88bb-f493c786d7ce": 1
   },
+  "supersededBy": "8d5f366f-4035-425d-9c3e-8fc8686d8fb6",
   "gates": [
     {
       "nodeId": "1791967759244",
