@@ -1,0 +1,212 @@
+{
+  "id": "8d5f366f-4035-425d-9c3e-8fc8686d8fb6",
+  "schemaVersion": 3,
+  "scope": "Personal",
+  "owner": "ikranthig7@gmail.com",
+  "ticketId": "KG-1",
+  "subjectType": "jiraIssue",
+  "subjectKey": "KG-1",
+  "status": "Failed",
+  "startedAt": "2026-10-16T10:54:25.041Z",
+  "completedAt": "2026-10-16T14:22:57.233Z",
+  "durationMs": 12512192,
+  "pipelineId": "22042886-d897-4683-b7fe-1663abfda41f",
+  "pipelineVersion": 1,
+  "blockVersions": {
+    "axon-workspace-provisioner": 7,
+    "axon-human-gate": 1,
+    "axon-pr-creator": 5,
+    "axon-jira-update": 1,
+    "6e64073b-a1ce-4031-8cbd-5b163f7fee2f": 1,
+    "axon-ticket-fetcher": 2,
+    "48d69ae0-08b9-42c6-88bb-f493c786d7ce": 1
+  },
+  "rerunOf": "44abbc9d-c57c-4837-997a-1222f53fe53b",
+  "rerunReason": "Other",
+  "attemptNumber": 2,
+  "gates": [
+    {
+      "nodeId": "1791967759244",
+      "blockName": "Human Gate",
+      "outcome": "rejected",
+      "by": "ikranthig7@gmail.com",
+      "at": "2026-10-16T14:22:57.233Z"
+    }
+  ],
+  "steps": [
+    {
+      "nodeId": "1791912370522",
+      "blockId": "axon-ticket-fetcher",
+      "blockName": "Ticket Fetcher",
+      "status": "Completed",
+      "startedAt": "2026-10-16T10:54:25.089Z",
+      "completedAt": "2026-10-16T10:54:25.989Z",
+      "durationMs": 900,
+      "outputs": [
+        {
+          "name": "ticket",
+          "tokens": 1120
+        },
+        {
+          "name": "acceptanceCriteria",
+          "tokens": 79
+        }
+      ]
+    },
+    {
+      "nodeId": "1791912113387",
+      "blockId": "6e64073b-a1ce-4031-8cbd-5b163f7fee2f",
+      "blockName": "Lane Planner",
+      "status": "Completed",
+      "startedAt": "2026-10-16T10:54:26.038Z",
+      "completedAt": "2026-10-16T10:54:30.269Z",
+      "durationMs": 4231,
+      "inputTokens": 3617,
+      "outputTokens": 331,
+      "costUsd": 0.005272000000000001,
+      "inputs": [
+        {
+          "name": "ticket",
+          "kind": "step",
+          "status": "provided",
+          "tokens": 1120
+        },
+        {
+          "name": "repoCatalog",
+          "kind": "axon",
+          "status": "provided",
+          "tokens": 56
+        },
+        {
+          "name": "lanes",
+          "kind": "axon",
+          "status": "provided",
+          "tokens": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "workItems",
+          "tokens": 167
+        }
+      ]
+    },
+    {
+      "nodeId": "1791885002519",
+      "blockId": "axon-workspace-provisioner",
+      "blockName": "Workspace Provisioner",
+      "status": "Completed",
+      "startedAt": "2026-10-16T10:54:30.311Z",
+      "completedAt": "2026-10-16T10:54:34.237Z",
+      "durationMs": 3926,
+      "inputs": [
+        {
+          "name": "workItemList",
+          "kind": "adapter",
+          "status": "provided",
+          "tokens": 167
+        }
+      ],
+      "outputs": [
+        {
+          "name": "workItems",
+          "tokens": 219
+        },
+        {
+          "name": "provisionedRepos",
+          "tokens": 124
+        }
+      ]
+    },
+    {
+      "nodeId": "1791885057952",
+      "blockName": "ForEach",
+      "status": "Running",
+      "startedAt": "2026-10-16T10:54:34.283Z"
+    },
+    {
+      "nodeId": "1791885062016",
+      "blockId": "48d69ae0-08b9-42c6-88bb-f493c786d7ce",
+      "blockName": "Demo Coder",
+      "status": "Completed",
+      "startedAt": "2026-10-16T10:54:34.320Z",
+      "completedAt": "2026-10-16T10:54:42.728Z",
+      "durationMs": 8408,
+      "inputTokens": 6,
+      "outputTokens": 403,
+      "costUsd": 0.04697399999999999,
+      "inputs": [
+        {
+          "name": "task",
+          "kind": "foreach",
+          "status": "provided",
+          "tokens": 62
+        },
+        {
+          "name": "shared",
+          "kind": "foreach",
+          "status": "provided",
+          "tokens": 0
+        },
+        {
+          "name": "item",
+          "kind": "foreach",
+          "status": "provided",
+          "tokens": 108
+        },
+        {
+          "name": "itemKey",
+          "kind": "foreach",
+          "status": "provided",
+          "tokens": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "changedFiles",
+          "tokens": 4
+        }
+      ]
+    },
+    {
+      "nodeId": "1791967759244",
+      "blockId": "axon-human-gate",
+      "blockName": "Human Gate",
+      "status": "Failed",
+      "startedAt": "2026-10-16T10:54:42.780Z",
+      "completedAt": "2026-10-16T14:22:57.233Z",
+      "durationMs": 12494453,
+      "outputs": []
+    }
+  ],
+  "prUrls": [],
+  "repoUrls": [],
+  "catalogVersion": "74fd2ca44561e465ff4a527cf70818f88b34eca0",
+  "inputTokens": 3623,
+  "outputTokens": 734,
+  "costUsd": 0.05224599999999999,
+  "trigger": "Manual",
+  "gateCount": 1,
+  "gatesPaused": 1,
+  "interventions": 3,
+  "aiSteps": 2,
+  "builtInSteps": 3,
+  "failureCategory": "Agent",
+  "totalTokens": 4357,
+  "items": [
+    {
+      "lane": "backend",
+      "status": "failed",
+      "tokens": 409
+    },
+    {
+      "lane": "ui",
+      "status": "pending",
+      "tokens": 0
+    }
+  ],
+  "laneCounts": {
+    "backend": 1,
+    "ui": 1
+  }
+}
