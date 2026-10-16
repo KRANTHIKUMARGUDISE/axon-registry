@@ -1,0 +1,29 @@
+id: 05f4214b-ddb6-4781-800d-f1227220fb4f
+schemaVersion: 3
+createdAt: 2026-10-16T13:25:33.824Z
+updatedAt: 2026-10-16T13:25:33.824Z
+scope: Personal
+owner: ikranthig7@gmail.com
+status: Draft
+name: my-planner
+description: Splits a ticket into work items and says which lane (specialist agent chain) each item goes through (demo sample)
+version: 1
+tags: []
+sourceType: Local
+agentRuntime: Claude
+artifactFormat: Skill
+artifactName: lane-planner
+entryPointPath: SKILL.md
+contextRequirements:
+  - ticket
+  - lanes
+outputSchema:
+  - name: workItems
+    type: WorkItemList
+    itemFields:
+      - lane
+  - summary
+contextMode: Selective
+executionType: Prompt
+defaultTimeoutSeconds: 120
+visibility: Personal
